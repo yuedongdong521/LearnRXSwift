@@ -27,6 +27,11 @@
 		844B118923138AE4000AFA5B /* LearnRXSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B118823138AE4000AFA5B /* LearnRXSwiftUITests.swift */; };
 		844B119B2313CB50000AFA5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844B11992313CB50000AFA5B /* LoginViewController.swift */; };
 		844B119C2313CB50000AFA5B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844B119A2313CB50000AFA5B /* LoginViewController.xib */; };
+		849592D1247F6D7E00B59F9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849592D0247F6D7E00B59F9F /* HomeViewController.swift */; };
+		849592D4247F7F6400B59F9F /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849592D3247F7F6400B59F9F /* RequestViewController.swift */; };
+		84959368247F8A0300B59F9F /* AlamofireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84959367247F8A0200B59F9F /* AlamofireRequest.swift */; };
+		8495936A247FD8BD00B59F9F /* MoyaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84959369247FD8BD00B59F9F /* MoyaRequest.swift */; };
+		8495936C247FDF7700B59F9F /* MoyaRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8495936B247FDF7700B59F9F /* MoyaRequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,11 @@
 		844B118A23138AE4000AFA5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844B11992313CB50000AFA5B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		844B119A2313CB50000AFA5B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		849592D0247F6D7E00B59F9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		849592D3247F7F6400B59F9F /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		84959367247F8A0200B59F9F /* AlamofireRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireRequest.swift; sourceTree = "<group>"; };
+		84959369247FD8BD00B59F9F /* MoyaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaRequest.swift; sourceTree = "<group>"; };
+		8495936B247FDF7700B59F9F /* MoyaRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaRequestViewController.swift; sourceTree = "<group>"; };
 		EC42D9BBCBAFCF8090C2525B /* Pods-LearnRXSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRXSwift.debug.xcconfig"; path = "Target Support Files/Pods-LearnRXSwift/Pods-LearnRXSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F26D2C0B123DE11DDB6A43AC /* libPods-LearnRXSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnRXSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +153,8 @@
 		844B116723138AE2000AFA5B /* LearnRXSwift */ = {
 			isa = PBXGroup;
 			children = (
+				849592D2247F6D9500B59F9F /* request */,
+				849592CF247F6D5E00B59F9F /* home */,
 				843F7C5D231505D100412349 /* logon */,
 				844B116823138AE2000AFA5B /* AppDelegate.swift */,
 				843BF855231E4F2C000477DD /* NetworkCheckManager.swift */,
@@ -174,6 +186,25 @@
 				844B118A23138AE4000AFA5B /* Info.plist */,
 			);
 			path = LearnRXSwiftUITests;
+			sourceTree = "<group>";
+		};
+		849592CF247F6D5E00B59F9F /* home */ = {
+			isa = PBXGroup;
+			children = (
+				849592D0247F6D7E00B59F9F /* HomeViewController.swift */,
+				849592D3247F7F6400B59F9F /* RequestViewController.swift */,
+				8495936B247FDF7700B59F9F /* MoyaRequestViewController.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		849592D2247F6D9500B59F9F /* request */ = {
+			isa = PBXGroup;
+			children = (
+				84959367247F8A0200B59F9F /* AlamofireRequest.swift */,
+				84959369247FD8BD00B59F9F /* MoyaRequest.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		B7BF286AFE7A7D5C8CE20356 /* Pods */ = {
@@ -353,7 +384,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				844642FD23179D270079EF76 /* String+URL.swift in Sources */,
+				8495936C247FDF7700B59F9F /* MoyaRequestViewController.swift in Sources */,
 				8439BEB82316864A00B9C63A /* DefaultValidationService.swift in Sources */,
+				849592D4247F7F6400B59F9F /* RequestViewController.swift in Sources */,
+				84959368247F8A0300B59F9F /* AlamofireRequest.swift in Sources */,
 				844B119B2313CB50000AFA5B /* LoginViewController.swift in Sources */,
 				843F7C652315294800412349 /* Wireframe.swift in Sources */,
 				8439BEB52316782600B9C63A /* LogonViewController.swift in Sources */,
@@ -361,8 +395,10 @@
 				843F7C61231506D400412349 /* LogonViewModel.swift in Sources */,
 				8439BEB223166A8900B9C63A /* ActivityIndicator.swift in Sources */,
 				843BF854231E45DA000477DD /* AlamofireTest.swift in Sources */,
+				8495936A247FD8BD00B59F9F /* MoyaRequest.swift in Sources */,
 				844B116923138AE2000AFA5B /* AppDelegate.swift in Sources */,
 				843F7C632315099600412349 /* LogonProtocol.swift in Sources */,
+				849592D1247F6D7E00B59F9F /* HomeViewController.swift in Sources */,
 				843BF856231E4F2C000477DD /* NetworkCheckManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

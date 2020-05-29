@@ -22,8 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let loginVC = LoginViewController.init()
-        let navig = UINavigationController.init(rootViewController: loginVC)
-        window?.rootViewController = navig
+        window?.rootViewController = loginVC
         window?.makeKeyAndVisible()
         return true
     }
@@ -50,7 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        /// 开启后台下载权限并赋值系统闭包：
+        BackgroundManager.shared.manager.backgroundCompletionHandler = completionHandler
+    }
 
 }
 
